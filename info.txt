@@ -1,0 +1,7 @@
+** CONFIGURAR POSTEGRER NO LINUX
+https://www.tecmint.com/install-postgresql-and-pgadmin-in-ubuntu/
+
+** Criando Super User postgresql
+https://tableplus.com/blog/2018/10/how-to-create-superuser-in-postgresql.html
+
+
