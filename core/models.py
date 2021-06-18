@@ -59,5 +59,22 @@ class Funcionario(Base):
         verbose_name = 'Funcionário'
         verbose_name_plural = 'Funcionários'
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.nome
+    
+    
+class Feature(Base):
+    ICONE_CHOICES_FEATURES = (
+        ('lni-rocket', 'Foguete'),
+        ('lni-laptop-phone', 'Lapto-Phone'),
+        ('lni-cog', 'Engrenagem'),
+        ('lni-leaf', 'Folha'),
+        ('lni-layers', 'Camadas'),
+    )
+
+    nome_feature = models.CharField('Features', max_length=100)
+    descricao_feature = models.TextField('Descrição', max_length=200)
+    icone_feature = models.CharField('Icone', max_length=20, choices=ICONE_CHOICES_FEATURES)
+
+    def __str__(self):
+        return self.nome_feature

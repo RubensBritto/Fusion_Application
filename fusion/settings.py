@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z5y2emna64)b3s^3k#!y!-v=ng91i@39@&c@+-+h2p0l%w5eci'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-""" Configurações POSTGRESQL localmente
+"""
+#Configurações POSTGRESQL localmente
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
