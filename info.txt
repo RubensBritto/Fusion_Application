@@ -4,4 +4,9 @@ https://www.tecmint.com/install-postgresql-and-pgadmin-in-ubuntu/
 ** Criando Super User postgresql
 https://tableplus.com/blog/2018/10/how-to-create-superuser-in-postgresql.html
 
+** Comando para gerar as traduções em determinada lingua
+python manage.py makemessages -l <es ou en ou fr ...>
+
+** Depois de feita a tradução, usar o comando abaixo para compilar o arquivo
+python manage.py compilemessages
 
